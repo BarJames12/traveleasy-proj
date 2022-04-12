@@ -42,7 +42,7 @@ function Register() {
     const [ErrorMessage, SetErrorMessage] = useState('');
 
     const onRegisterClick = () => {
-        axios.post("http://localhost:3001/users", {
+        axios.post("https://traveleasy-proj.herokuapp.com/users", {
             firstName: firstNameReg,
             lastName: lastNameReg,
             username: userNameReg,
