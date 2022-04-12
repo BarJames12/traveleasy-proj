@@ -1,0 +1,18 @@
+.chart {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  .chart-div {
+    width: 90rem;
+    margin-top: 5rem;
+  }
+  h1 {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #414b68;
+  }
+}

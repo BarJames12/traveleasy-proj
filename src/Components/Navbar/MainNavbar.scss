@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
+
+.navbar {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  background-color: #a1a1a1c0;
+  backdrop-filter: blur(3px);
+  font-size: 16px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  z-index: 1;
+  .nav-link {
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    &:hover {
+      color: black;
+    }
+  }
+  .nav-link:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px #019fb6;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  .nav-link:after {
+    transform-origin: 100% 50%;
+  }
+  .nav-link:after {
+    transform-origin: 0% 50%;
+  }
+  .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+  }
+  .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+  }
+
+  .logo {
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+
+  .navbar-logo-icon {
+    height: 3rem;
+  }
+  .navBar-right {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    p {
+      font-weight: 600;
+      color: rgb(36 79 112);
+    }
+  }
+  .nav-collapse {
+    border-radius: 10px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    z-index: 20 !important;
+  }
+}

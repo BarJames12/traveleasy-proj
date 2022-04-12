@@ -1,0 +1,170 @@
+.userPage {
+  min-height: 100vh;
+
+  .login-page-title {
+    font-family: "Cinzel", serif !important;
+    font-size: 4rem;
+    color: #56676c;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+
+    .column {
+    }
+
+    .post-module {
+      position: relative;
+      gap: 2rem;
+      display: block;
+      background: #ffffff4f;
+      width: 100px;
+      min-width: 330px;
+      height: 400px;
+      -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+      -webkit-transition: all 0.3s linear 0s;
+      -moz-transition: all 0.3s linear 0s;
+      -ms-transition: all 0.3s linear 0s;
+      -o-transition: all 0.3s linear 0s;
+      transition: all 0.3s linear 0s;
+      border-radius: 20px;
+      margin: 10px;
+      font-family: "Merriweather Sans", sans-serif;
+    }
+
+    .vacation-description {
+      word-break: break-all;
+      word-break: keep-all;
+      overflow: auto;
+      height: 4.5rem;
+    }
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+      background-color: #ffffff00;
+    }
+    .post-module:hover,
+    .hover {
+      -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    }
+    .post-module:hover .thumbnail img,
+    .hover .thumbnail img {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      transform: scale(1.1);
+      opacity: 0.6;
+    }
+    .post-module .thumbnail {
+      height: 400px;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .post-module .thumbnail .date {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      background: #e74c3c;
+      width: 55px;
+      height: 55px;
+      padding: 12.5px 0;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      -webkti-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .post-module .thumbnail .date .day {
+      font-size: 18px;
+    }
+
+    .post-module .thumbnail img {
+      display: block;
+      width: 120%;
+      -webkit-transition: all 0.3s linear 0s;
+      -moz-transition: all 0.3s linear 0s;
+      -ms-transition: all 0.3s linear 0s;
+      -o-transition: all 0.3s linear 0s;
+      transition: all 0.3s linear 0s;
+    }
+    .post-module .post-content {
+      position: absolute;
+      bottom: 0;
+      background: #ffffff;
+      width: 100%;
+      padding: 10px;
+      border-bottom-right-radius: 20px;
+      -webkti-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+      -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+      -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+      -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+      transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    }
+    .post-module .post-content .category {
+      position: absolute;
+      top: -34px;
+      left: 0;
+      background: #e73e2b;
+      padding: 10px 15px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .post-module .post-content .title {
+      margin: 0;
+      padding: 0 0 10px;
+      color: #7dbb8e;
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .post-module .post-content .sub_title {
+      margin: 0;
+      padding: 0 0 20px;
+      color: #598fa5;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .post-module .post-content .description {
+      color: #666666;
+      font-size: 14px;
+      line-height: 1.8em;
+    }
+    .post-module .post-content .post-meta {
+      margin: 30px 0 0;
+      color: #999999;
+    }
+    .post-module .post-content .post-meta .timestamp {
+      margin: 0 16px 0 0;
+    }
+    .post-module .post-content .post-meta a {
+      color: #999999;
+      text-decoration: none;
+    }
+  }
+
+  .welcome-div {
+    font-family: "Merriweather Sans", sans-serif;
+  }
+
+  .heart-div {
+    height: fit-content;
+    width: fit-content;
+  }
+}

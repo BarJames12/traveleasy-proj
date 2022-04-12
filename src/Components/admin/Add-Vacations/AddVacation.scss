@@ -1,0 +1,52 @@
+.add-vacations {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  .row {
+    justify-content: center;
+    margin-top: 10rem;
+  }
+
+  .addVacation-card {
+    display: flex;
+    width: 30rem;
+    height: auto;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.411);
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  h1 {
+    font-family: "Merriweather Sans", sans-serif !important;
+    align-self: center;
+    color: #414b68;
+  }
+
+  input {
+    border: none;
+    border-bottom: solid 2px black;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  button {
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(65, 65, 65, 0.705);
+    background: linear-gradient(to left, #012a4ec0 50%, #0d3b64c0 50%) right;
+    background-size: 200%;
+    transition: 0.6s ease-out;
+    margin-right: 20rem;
+    margin-bottom: 1rem;
+    &:hover {
+      background-position: left;
+      color: white;
+    }
+  }
+}

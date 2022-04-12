@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.login {
+  font-family: "Poppins", sans-serif;
+  height: 72.5vh;
+}
+
+.login .loginForm {
+  margin-top: 10rem;
+}
+
+.login .AppForm .AppFormLeft h1 {
+  font-size: 35px;
+}
+
+.login .AppForm .AppFormLeft input:focus {
+  border-color: #ced4da;
+}
+
+.login .AppForm .AppFormLeft input::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+.login .AppForm .AppFormLeft input:-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.login .AppForm .AppFormLeft input::-ms-input-placeholder {
+  font-size: 15px;
+}
+
+.login .AppForm .AppFormLeft input::placeholder {
+  font-size: 15px;
+}
+
+.login .AppForm .AppFormLeft i svg {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 30px;
+}
+
+.login .AppForm .AppFormLeft a {
+  color: #3a3e42;
+}
+
+.login .AppForm .AppFormLeft button {
+  -webkit-box-shadow: 2px 2px rgba(65, 65, 65, 0.705);
+          box-shadow: 2px 2px rgba(65, 65, 65, 0.705);
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #6ca57b), color-stop(50%, #51855f)) right;
+  background: linear-gradient(to left, #6ca57b 50%, #51855f 50%) right;
+  background-size: 200%;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+  border-radius: 30px;
+}
+
+.login .AppForm .AppFormLeft button:hover {
+  background-position: left;
+  color: white;
+}
+
+.login .AppForm .AppFormLeft p span {
+  color: #0665ca;
+}
+
+.login .creat-acc-navlink {
+  color: #3535f1 !important;
+  font-size: 20px;
+}
+
+.login .creat-acc-navlink:hover {
+  color: black;
+}
+
+.login .carousel h3 {
+  color: black;
+  margin-bottom: 10rem;
+}
+
+.login .carousel p {
+  color: black;
+}
+
+.login .carousel button {
+  color: black !important;
+}
+
+.login .carousel .carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+/*# sourceMappingURL=Login.css.map */

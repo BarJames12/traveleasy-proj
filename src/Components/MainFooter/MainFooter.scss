@@ -1,0 +1,121 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.main-footer {
+  
+ 
+
+  .footer-distributed {
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 15px 10px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* Footer left */
+
+  .footer-distributed .footer-left {
+    width: 40%;
+  }
+
+  /* The company logo */
+
+  .footer-distributed h3 {
+    color: #000000;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .footer-distributed h3 span {
+    color: rgb(0, 0, 0);
+  }
+
+  /* Footer Right */
+
+  // .footer-distributed .footer-right {
+  //   width: 20%;
+  // }
+
+  .footer-distributed .footer-icons a {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    gap: 10px;
+  }
+
+  .icons {
+    height: 10rem;
+    font-size: 35px;
+    color: #262626;
+    transition: 0.4s;
+  }
+
+  .facebook-icon {
+    &:hover {
+      color: #3b5998;
+    }
+  }
+  .instagram-icon {
+    &:hover {
+      color: #e4405f;
+    }
+  }
+  .linkedin-icon {
+    &:hover {
+      color: #3b5998;
+    }
+  }
+  .github-icon {
+    &:hover {
+      color: #7c33b8;
+    }
+  }
+
+  /* If you don't want the footer to be responsive, remove these media queries */
+
+}
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+ @media only screen and (max-width: 880px) {
+.main-footer{ 
+  margin-top: 10rem ;
+}
+  }

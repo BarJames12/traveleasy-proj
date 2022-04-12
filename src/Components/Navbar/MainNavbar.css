@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
+.navbar {
+  width: 100%;
+  height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffffc0;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  font-size: 16px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  z-index: 1;
+}
+
+.navbar .nav-link {
+  display: inline-block;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link:hover {
+  color: black;
+}
+
+.navbar .nav-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #019fb6;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.navbar .nav-link:after {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.navbar .nav-link:after {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+.navbar .nav-link:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+.navbar .nav-link:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.navbar .logo {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.navbar .navbar-logo-icon {
+  height: 3rem;
+}
+
+.navbar .navBar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 2rem;
+}
+
+.navbar .navBar-right p {
+  font-weight: 600;
+}
+/*# sourceMappingURL=MainNavbar.css.map */

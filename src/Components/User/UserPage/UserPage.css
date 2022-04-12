@@ -1,0 +1,143 @@
+.userPage {
+  min-height: 100vh;
+}
+
+.userPage .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.userPage .container .post-module {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background: #ffffff4f;
+  width: 100px;
+  min-width: 330px;
+  height: 400px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  border-radius: 20px;
+  margin: 10px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.userPage .container .post-module:hover,
+.userPage .container .hover {
+  -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.userPage .container .post-module:hover .thumbnail img,
+.userPage .container .hover .thumbnail img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.userPage .container .post-module .thumbnail {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.userPage .container .post-module .thumbnail .date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background: #e74c3c;
+  width: 55px;
+  height: 55px;
+  padding: 12.5px 0;
+  border-radius: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  -webkti-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.userPage .container .post-module .thumbnail .date .day {
+  font-size: 18px;
+}
+
+.userPage .container .post-module .thumbnail img {
+  display: block;
+  width: 120%;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.userPage .container .post-module .post-content {
+  position: absolute;
+  bottom: 0;
+  background: #ffffff;
+  width: 100%;
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+  -webkti-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+
+.userPage .container .post-module .post-content .category {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  background: #e73e2b;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.userPage .container .post-module .post-content .title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #7dbb8e;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.userPage .container .post-module .post-content .sub_title {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #598fa5;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.userPage .container .post-module .post-content .description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.userPage .container .post-module .post-content .post-meta {
+  margin: 30px 0 0;
+  color: #999999;
+}
+
+.userPage .container .post-module .post-content .post-meta .timestamp {
+  margin: 0 16px 0 0;
+}
+
+.userPage .container .post-module .post-content .post-meta a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.userPage .welcome-div {
+  font-family: "Merriweather Sans", sans-serif;
+}
+/*# sourceMappingURL=UserPage.css.map */
