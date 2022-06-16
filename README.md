@@ -1,9 +1,12 @@
 
+<h1>About Traveleast project</h1>
+
 <p align="center">
   <img width="600" height="310" src="https://user-images.githubusercontent.com/84085280/174053673-4cf28d78-0a65-4433-9022-e183b02152e7.gif">
 </p>
+</br<
 
-
+<p ><b>React ,NodeJS , MySQl</b><br > Travel app that showing you deals for vacations all over the world. User can register, sign in and see what is thier next vacation. </p>
 
 # Getting Started with Create React App
 
