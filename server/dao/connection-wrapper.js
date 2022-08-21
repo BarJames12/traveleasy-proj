@@ -2,13 +2,11 @@ const mysql = require("mysql2");
 
 // Connection = קו תקשורת למסד הנתונים
 const connection = mysql.createConnection({
-  host: "eu-cdbr-west-02.cleardb.net", // Computer
-  user: "bc2c80f1e27892", // Username
-  password: "846a48d3", // Password
-  database: "heroku_9eabc862f7cd688", // Database name
+  host: "eu-cdbr-west-03.cleardb.net", // Computer
+  user: "b2eb22aa79425d", // Username
+  password: "4e798f8a", // Password
+  database: "heroku_dab58e13d0033f0", // Database name
 });
-
-
 
 // Connect to the database:
 connection.connect((err) => {
@@ -16,7 +14,7 @@ connection.connect((err) => {
     console.log("Failed to create connection + " + err);
     return;
   }
-  console.log("We're connected to MySQL");
+  console.log("We're connected to MySQL"); 
 });
 
 // One function for executing select / insert / update / delete:
