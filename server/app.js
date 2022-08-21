@@ -3,7 +3,8 @@ const server = express();
 const port = process.env.PORT || 3001;
 server.use(express.json());
 
-const usersController = require("./controllers/usersControllers");
+// const usersController = require("./controllers/usersControllers");
+import users from "./Controllers/users";
 const vacationsControllers = require("./Controllers/vacationsControllers");
 const followControllers = require("./Controllers/followController");
 
@@ -17,7 +18,7 @@ server.use(cors()); //react
 
 // server.use(loginFilter());
 
-server.use("/users", usersController);
+server.use("/users", users);
 server.use("/vacations", vacationsControllers);
 server.use("/follow", followControllers);
 
