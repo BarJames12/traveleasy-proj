@@ -1,0 +1,79 @@
+.add-vacations {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.add-vacations .addVacation-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30rem;
+  height: auto;
+  margin-bottom: 100px;
+  background: rgba(255, 255, 255, 0.411);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.add-vacations h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.add-vacations input {
+  border: none;
+  border-bottom: solid 2px black;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.add-vacations button {
+  color: white;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px rgba(65, 65, 65, 0.705);
+          box-shadow: 2px 2px rgba(65, 65, 65, 0.705);
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #012a4ec0), color-stop(50%, #0d3b64c0)) right;
+  background: linear-gradient(to left, #012a4ec0 50%, #0d3b64c0 50%) right;
+  background-size: 200%;
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+  margin-left: 20rem;
+  margin-bottom: 1rem;
+}
+
+.add-vacations button:hover {
+  background-position: left;
+  color: white;
+}
+
+.add-vacations .error-div {
+  background-color: rgba(255, 0, 0, 0.678);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=AddVacation.css.map */

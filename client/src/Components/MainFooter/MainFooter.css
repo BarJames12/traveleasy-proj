@@ -1,0 +1,117 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.main-footer {
+  /* Footer left */
+  /* The company logo */
+  /* Footer Right */
+  /* If you don't want the footer to be responsive, remove these media queries */
+}
+
+.main-footer .footer-distributed {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 15px 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-footer .footer-distributed .footer-left,
+.main-footer .footer-distributed .footer-center,
+.main-footer .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-footer .footer-distributed .footer-left {
+  width: 40%;
+}
+
+.main-footer .footer-distributed h3 {
+  color: #000000;
+  font-size: 36px;
+  margin: 0;
+}
+
+.main-footer .footer-distributed h3 span {
+  color: black;
+}
+
+.main-footer .footer-distributed .footer-icons a {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  gap: 10px;
+}
+
+.main-footer .icons {
+  height: 10rem;
+  font-size: 35px;
+  color: #262626;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main-footer .facebook-icon:hover {
+  color: #3b5998;
+}
+
+.main-footer .instagram-icon:hover {
+  color: #e4405f;
+}
+
+.main-footer .linkedin-icon:hover {
+  color: #3b5998;
+}
+
+.main-footer .github-icon:hover {
+  color: #7c33b8;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .main-footer {
+    margin-top: 10rem;
+  }
+}
+/*# sourceMappingURL=MainFooter.css.map */

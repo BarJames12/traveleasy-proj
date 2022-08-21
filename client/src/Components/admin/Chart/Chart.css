@@ -1,0 +1,15 @@
+.chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 83vh;
+}
+
+.chart .chart-div {
+  width: 80rem;
+  margin-top: 10rem;
+}
+/*# sourceMappingURL=Chart.css.map */
