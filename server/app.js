@@ -23,6 +23,11 @@ server.use("/follow", followControllers);
 
 server.use(errorHandler);
 
+server.get("/", (req, res) => {
+  res.send("APP IS RUNNING. :]");
+});
+
+
 server.listen(port, () => {
   console.log(`server running on ${port}`);
 });
