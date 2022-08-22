@@ -8,8 +8,8 @@ import dotenv from "dotenv";
 server.use(express.json());
 
 dotenv.config();
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+server.use(bodyParser.json({ limit: "30mb", extended: true }));
+server.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 // const usersController = require("./controllers/usersControllers");
 import users from "./controllers/users";
