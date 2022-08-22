@@ -12,13 +12,13 @@ server.use(bodyParser.json({ limit: "30mb", extended: true }));
 server.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 // const usersController = require("./controllers/usersControllers");
-import users from "./controllers/users";
-const vacationsControllers = require("./controllers/vacationsControllers");
-const followControllers = require("./controllers/followController");
+import users from "./controllers/users.js";
+const vacationsControllers = require("./controllers/vacationsControllers.js");
+const followControllers = require("./controllers/followController.js");
 
 const cors = require("cors");
-const errorHandler = require("./errors/error-handler");
-const loginFilter = require("./middleware/login-filter");
+const errorHandler = require("./errors/error-handler.js");
+const loginFilter = require("./middleware/login-filter.js");
 
 // server.use(cors({ origin: "http://localhost:3000" })); //react
 server.use(cors()); //react
