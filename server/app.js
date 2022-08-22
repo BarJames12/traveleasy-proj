@@ -1,12 +1,20 @@
 const express = require("express");
 const server = express();
 const port = process.env.PORT || 3001;
+import bodyParser from "body-parser";
+import dotenv from "dotenv";
+
+
 server.use(express.json());
 
+dotenv.config();
+app.use(bodyParser.json({ limit: "30mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+
 // const usersController = require("./controllers/usersControllers");
-import users from "./Controllers/users";
-const vacationsControllers = require("./Controllers/vacationsControllers");
-const followControllers = require("./Controllers/followController");
+import users from "./controllers/users";
+const vacationsControllers = require("./controllers/vacationsControllers");
+const followControllers = require("./controllers/followController");
 
 const cors = require("cors");
 const errorHandler = require("./errors/error-handler");
