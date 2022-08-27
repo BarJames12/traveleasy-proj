@@ -4,8 +4,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 
 import * as users from "./controllers/users.js";
-import * as vacationsControllers from "./controllers/vacationsControllers.js";
-import * as followControllers from "./controllers/followController.js";
+import * as vacationsControllers from "./controllers/vacationscontrollers.js";
+import * as followControllers from "./controllers/followcontroller.js";
 
 import * as errorHandler from './errors/error-handler.js';
 
