@@ -1,6 +1,9 @@
-const usersLogic = require("../logic/users-logic");
-const express = require("express");
+import * as usersLogic from "../logic/users-logic.js";
+import express from "express";
 const router = express.Router();
+
+
+
 
 router.post("/", async (request, response, next) => {
   // Extracting the JSON from the packet's BODY
