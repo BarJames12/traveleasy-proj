@@ -1,10 +1,10 @@
-const usersDao = require("../dao/users-dao");
-const crypto = require("crypto");
-const jwt = require("jsonwebtoken");
-const config = require("./config.json");
-const ErrorType = require("../errors/error-type");
-const ServerError = require("../errors/server-error");
-const cacheModule = require("../logic/cache-module");
+import * as usersDao from "../dao/users-dao.js";
+import crypto from "crypto";
+import jwt from "jsonwebtoken";
+import config from "./config.json";
+import ErrorType from "../errors/error-type.js";
+import ServerError from "../errors/server-error.js";
+import cacheModule from "../logic/cache-module.js";
 
 // Hash
 const saltRight = "sdkjfhdskajh";

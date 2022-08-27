@@ -1,6 +1,9 @@
-const { request } = require("express");
-const expressJwt = require("express-jwt");
-const config = require("../logic/config.json");
+
+
+import request from "express";
+import expressJwt from "../errors/error-type";
+import config from "../logic/config.json";
+
 
 // Extracting the text from the secret's JSON
 let { secret } = config;

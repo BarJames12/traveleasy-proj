@@ -1,7 +1,8 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const vacationsLogic = require("../logic/vacations-logic");
-const cacheModule = require("../logic/cache-module");
+
+import * as vacationsLogic from "../logic/vacations-logic.js";
+import * as cacheModule from "../logic/cache-module.js";
 
 router.get("/", async (request, response, next) => {
   try {

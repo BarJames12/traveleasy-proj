@@ -1,15 +1,14 @@
-const followLogic = require("../logic/follow-logic");
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const cacheModule = require("../logic/cache-module");
-
+import * as followLogic from "./controllers/users.js";
+import * as cacheModule from "../logic/cache-module.js";
 
 router.post("/", async (request, response, next) => {
   try {
     let vacationId = request.body.vacationId;
     let userData = await cacheModule.extractUserDataFromCache(request);
     let userId = userData.userId;
-    
+
     await followLogic.followNewVacation(userId, vacationId);
     response.json();
   } catch (error) {
@@ -22,7 +21,7 @@ router.delete("/:id", async (request, response, next) => {
     let userData = await cacheModule.extractUserDataFromCache(request);
     let userId = userData.userId;
     let vacationId = request.params.id;
-    
+
     await followLogic.removeFollow(vacationId, userId);
     response.json();
   } catch (error) {

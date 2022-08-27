@@ -1,5 +1,4 @@
-const mysql = require("mysql2");
-
+import mysql from "mysql2";
 // Connection = קו תקשורת למסד הנתונים
 // const connection = mysql.createConnection({
 //   host: "eu-cdbr-west-03.cleardb.net", // Computer
@@ -16,21 +15,18 @@ const mysql = require("mysql2");
 
 let connection;
 console.log(process.env.JAWSDB_URL);
-if(process.env.JAWSDB_URL){ 
-console.log("jaws");
-connection = mysql.createConnection(process.env.JAWSDB_URL)
-}else{ 
+if (process.env.JAWSDB_URL) {
+  console.log("jaws");
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
   console.log("localDB");
-  connection = mysql.createConnection({    
+  connection = mysql.createConnection({
     host: "localhost", // Computer
     user: "root", // Username
     password: "1234", // Password
     database: "vacations", // Database name
-    
   });
 }
-
-
 
 // Connect to the database:
 connection.connect((err) => {

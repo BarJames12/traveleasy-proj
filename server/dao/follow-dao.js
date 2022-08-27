@@ -1,13 +1,12 @@
-const ErrorType = require("../errors/error-type");
-const ServerError = require("../errors/server-error");
-let connection = require("./connection-wrapper");
+import * as ErrorType from "../errors/error-type.js";
+import * as ServerError from "../errors/server-error.js";
+import * as connection from "./connection-wrapper.js";
 
 // follow a new vacation
 async function followNewVacation(userId, vacationId) {
-
   let sql = `INSERT INTO followers (user_id , vacation_id)
     VALUES (?,?)`;
-  
+
   let parameters = [userId, vacationId];
   try {
     await connection.executeWithParameters(sql, parameters);

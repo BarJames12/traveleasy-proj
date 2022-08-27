@@ -1,6 +1,6 @@
-let connection = require("./connection-wrapper");
-const ErrorType = require("../errors/error-type");
-const ServerError = require("../errors/server-error");
+import * as connection from "connection";
+import * as ErrorType from "../errors/error-type.js";
+import * as ServerError from "../errors/server-error.js";
 
 async function getAllVacations(userId, userType) {
   let sql;
