@@ -1,6 +1,6 @@
 import * as vacationsDao from "../dao/vacations-dao.js";
 import * as ErrorType from "../errors/error-type.js";
-import * as ServerError from "../errors/server-error.js";
+import * as ServerError from "../errors/server-error.mjs";
 
 async function getAllVacations(userId, userType) {
   let allVacations = await vacationsDao.getAllVacations(userId, userType);

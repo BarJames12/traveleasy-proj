@@ -3,7 +3,7 @@ import crypto from "crypto";
 import jwt from "jsonwebtoken";
 import * as config from "./config.json"  assert {type: "json"};
 import * as ErrorType from "../errors/error-type.js";
-import * as ServerError from "../errors/server-error.js";
+import * as ServerError from "../errors/server-error.mjs";
 import * as cacheModule from "../logic/cache-module.js";
 
 // Hash
@@ -85,7 +85,7 @@ async function login(username, password) {
   return { token, userType: userDetails.userType, username: username };
 }
 
-export default {
+export {
   addUser,
   login,
 };

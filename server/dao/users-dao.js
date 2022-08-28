@@ -1,5 +1,5 @@
 import * as ErrorType from "../errors/error-type.js";
-import * as ServerError from "../errors/server-error.js";
+import * as ServerError from "../errors/server-error.mjs";
 import * as connection from "./connection-wrapper.js";
 
 async function isUserExistByUserName(registrationData) {
