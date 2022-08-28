@@ -1,6 +1,6 @@
 import * as connection from "./connection-wrapper.js";
 import * as ErrorType from "../errors/error-type.js";
-import * as ServerError from "../errors/server-error.mjs";
+import * as ServerError from "../errors/server-error.js";
 
 async function getAllVacations(userId, userType) {
   let sql;

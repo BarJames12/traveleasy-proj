@@ -1,4 +1,4 @@
-class ServerError extends Error{
+export class ServerError extends Error{
 
     // Actual usage :    
     // 1. THE USERS throws the error, due to a failed validation.
@@ -39,4 +39,3 @@ class ServerError extends Error{
     }
 }
 
-export {ServerError}
