@@ -41,7 +41,7 @@ async function removeFollow(userId, vacationId) {
 //   }
 // }
 
-module.exports = {
+export default {
   followNewVacation,
   removeFollow,
   // getNumberOfFollowsAsync,

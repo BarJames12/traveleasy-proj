@@ -52,7 +52,7 @@ async function login(username, password) {
   }
 }
 
-module.exports = {
+export default {
   addUser,
   login,
   isUserExistByUserName,

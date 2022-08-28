@@ -1,4 +1,4 @@
-import * as connection from "connection";
+import * as connection from "./connection-wrapper.js";
 import * as ErrorType from "../errors/error-type.js";
 import * as ServerError from "../errors/server-error.js";
 
@@ -40,7 +40,7 @@ FROM
       followers
   GROUP BY vacation_id) fv ON v.vacation_id = fv.vacation_id
   ORDER BY amountOfFollowers DESC`; // order by amount of follower for admin
-} else {
+  } else {
     sql = `SELECT 
   v.vacation_id AS vacationId,
   v.location,
@@ -73,7 +73,7 @@ FROM
       followers
   GROUP BY vacation_id) fv ON v.vacation_id = fv.vacation_id
   ORDER BY isFollowed DESC`; // order by user followed vacation.
-}
+  }
 
   try {
     let parameters = [userId];
@@ -152,7 +152,7 @@ async function deleteVacationFromFollowes(vacationId) {
   }
 }
 
-module.exports = {
+export default {
   getAllVacations,
   addVacation,
   updateVacation,

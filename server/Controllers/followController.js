@@ -29,4 +29,4 @@ router.delete("/:id", async (request, response, next) => {
   }
 });
 
-module.exports = router;
+export default router;

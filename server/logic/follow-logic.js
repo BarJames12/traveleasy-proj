@@ -8,7 +8,7 @@ async function removeFollow(userId, vacationId) {
   await followDao.removeFollow(userId, vacationId);
 }
 
-module.exports = {
+export default {
   followNewVacation,
   removeFollow,
 };

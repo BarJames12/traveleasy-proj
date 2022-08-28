@@ -1,10 +1,10 @@
 import * as usersDao from "../dao/users-dao.js";
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
-import config from "./config.json";
-import ErrorType from "../errors/error-type.js";
-import ServerError from "../errors/server-error.js";
-import cacheModule from "../logic/cache-module.js";
+import * as config from "./config.json"  assert {type: "json"};
+import * as ErrorType from "../errors/error-type.js";
+import * as ServerError from "../errors/server-error.js";
+import * as cacheModule from "../logic/cache-module.js";
 
 // Hash
 const saltRight = "sdkjfhdskajh";
@@ -35,11 +35,11 @@ async function validateUserDetails(registrationData) {
   if (!registrationData.password) {
     throw new ServerError(ErrorType.EMPTY_FIELD);
   }
- 
+
   const user = await usersDao.isUserExistByUserName(registrationData);
   if (user.length != 0) {
-     throw new ServerError(ErrorType.USER_NAME_ALREADY_EXIST);
-    }
+    throw new ServerError(ErrorType.USER_NAME_ALREADY_EXIST);
+  }
   if (registrationData.password.localeCompare(registrationData.confirmPassword) !== 0) {
     throw new ServerError(ErrorType.INVALID_PASSWORD);
   }
@@ -64,8 +64,6 @@ function validateLoginUserDetails(username, password) {
   if (!password) {
     throw new ServerError(ErrorType.EMPTY_FIELD);
   }
-
-  
 }
 
 async function login(username, password) {
@@ -80,14 +78,14 @@ async function login(username, password) {
   if (!userDetails) {
     throw new ServerError(ErrorType.UNAUTHORIZED);
   }
-  const token = jwt.sign({ sub: username}, config.secret);
+  const token = jwt.sign({ sub: username }, config.secret);
 
   cacheModule.set(token, { userType: userDetails.userType, userId: userDetails.userId });
   console.log(userDetails.userId);
   return { token, userType: userDetails.userType, username: username };
 }
 
-module.exports = {
+export default {
   addUser,
   login,
 };

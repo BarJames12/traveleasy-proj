@@ -65,7 +65,7 @@ function executeWithParameters(sql, parameters) {
   });
 }
 
-module.exports = {
+export default {
   execute,
   executeWithParameters,
 };

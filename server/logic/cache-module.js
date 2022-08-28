@@ -21,7 +21,7 @@ function extractUserDataFromCache(request) {
   // return { userData, token };
 }
 
-module.exports = {
+export default {
   set,
   get,
   extractUserDataFromCache,

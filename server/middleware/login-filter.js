@@ -30,4 +30,4 @@ function authenticateJwtRequestToken() {
 
 
 
-module.exports = authenticateJwtRequestToken;
+export default authenticateJwtRequestToken;

@@ -53,7 +53,7 @@ function validateVacationDetalis(vacationData) {
   }
 }
 
-module.exports = {
+export default {
   getAllVacations,
   addVacation,
   updateVacation,
