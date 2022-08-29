@@ -77,7 +77,7 @@ function Edit() {
                 history.push('/');
             }
         }
-        await axios.put(`http://traveleasy-proj.herokuapp.com/vacations/update-vacation/${vacationId}`, {
+        await axios.put(`https://traveleasy-proj.herokuapp.com/vacations/update-vacation/${vacationId}`, {
             image,
             location,
             description,

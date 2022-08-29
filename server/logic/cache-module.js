@@ -13,7 +13,9 @@ async function set(token, userData) {
 }
 
 function extractUserDataFromCache(request) {
+  console.log(request);
   let authorizationString = request.headers["authorization"];
+  console.log(authorizationString);
   let token = authorizationString.substring("Bearer ".length);
   console.log(token);
   let userData = get(token);

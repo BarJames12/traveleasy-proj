@@ -78,7 +78,7 @@ function MainNavbar() {
                             <div className="navBar-right">
                                 <p> {!isLoginStatus && " "} {isLoginStatus && ` Hello ${username} !`}</p>
 
-                                <Nav.Link onClick={onLogoutClicked} href="/login">
+                                <Nav.Link onClick={onLogoutClicked} href="/">
                                     {isLoginStatus && "Logout"} {!isLoginStatus && "Login"} <FiLogOut />
                                 </Nav.Link>
                                 {!isLoginStatus && (

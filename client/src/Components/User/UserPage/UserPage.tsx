@@ -64,7 +64,7 @@ function UserPage(props: IVacation) {
 
 
     function getAllVacation() {
-        axios.get("http://traveleasy-proj.herokuapp.com/vacations")
+        axios.get("https://traveleasy-proj.herokuapp.com/vacations")
 
             .then((response) => {
                 let vacationsResponse = response.data;

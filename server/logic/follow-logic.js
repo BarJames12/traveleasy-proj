@@ -1,4 +1,4 @@
-import * as followDao from "../dao/follow-dao.js";
+import followDao from "../dao/follow-dao.js";
 
 async function followNewVacation(userId, vacationId) {
   await followDao.followNewVacation(userId, vacationId);

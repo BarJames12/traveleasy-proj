@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
-import * as followLogic from "../logic/follow-logic.js";
-import * as cacheModule from "../logic/cache-module.js";
+import followLogic from "../logic/follow-logic.js";
+import cacheModule from "../logic/cache-module.js";
 
 router.post("/", async (request, response, next) => {
   try {

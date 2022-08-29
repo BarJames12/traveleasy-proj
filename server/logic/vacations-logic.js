@@ -1,4 +1,4 @@
-import * as vacationsDao from "../dao/vacations-dao.js";
+import vacationsDao from "../dao/vacations-dao.js";
 import * as ErrorType from "../errors/error-type.js";
 import * as ServerError from "../errors/server-error.js";
 

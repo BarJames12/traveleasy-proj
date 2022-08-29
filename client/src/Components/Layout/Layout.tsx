@@ -49,7 +49,7 @@ function Layout() {
               <AdminPage />
             </Route>
 
-            <Redirect from="/" to="/login" exact />
+            <Redirect from="/" to="/" exact />
           </Switch>
         </main>
         <MainFooter />
