@@ -28,4 +28,4 @@ router.post("/login", async (request, response, next) => {
   }
 });
 
-export default {router};
+export default router;
