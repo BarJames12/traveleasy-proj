@@ -1,10 +1,11 @@
-import * as usersDao from "../dao/users-dao.js";
+import usersDao from "../dao/users-dao.js";
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
-import * as config from "./config.json"  assert {type: "json"};
+import * as config from "./config.json" assert { type: "json" };
+
 import * as ErrorType from "../errors/error-type.js";
 import * as ServerError from "../errors/server-error.js";
-import * as cacheModule from "../logic/cache-module.js";
+import cacheModule from "../logic/cache-module.js";
 
 // Hash
 const saltRight = "sdkjfhdskajh";
@@ -78,14 +79,11 @@ async function login(username, password) {
   if (!userDetails) {
     throw new ServerError(ErrorType.UNAUTHORIZED);
   }
-  const token = jwt.sign({ sub: username }, config.secret);
+  const token = jwt.sign({ sub: username }, process.env.JWT_KEY);
 
   cacheModule.set(token, { userType: userDetails.userType, userId: userDetails.userId });
   console.log(userDetails.userId);
   return { token, userType: userDetails.userType, username: username };
 }
 
-export {
-  addUser,
-  login,
-};
+export { addUser, login };

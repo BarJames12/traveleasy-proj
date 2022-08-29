@@ -24,22 +24,6 @@ function AdminPage(vacations: IVacation) {
     const history = useHistory();
     const username = useSelector((state: AppState) => state.user);
 
-    // const onDeleteVacationClick = (vacationId: any) => {
-
-    //     if (window.confirm("Delete Vacation ? ")) {
-    //         try {
-    //             axios.delete(`http://localhost:3001/vacations/${vacationId}`);
-    //             dispatch({ type: ActionType.RemoveVacation, payload: { vacationId } });
-    //             console.log("vacation removed")
-    //             toast.success("Vacation remove")
-
-    //         } catch (e) {
-    //             console.log(e.response.data.error)
-    //         }
-    //     } else {
-    //         return;
-    //     }
-    // };
 
     const onDeleteVacationClick = (vacationId: any) => {
         Swal.fire({
@@ -53,7 +37,7 @@ function AdminPage(vacations: IVacation) {
         }).then((result) => {
             try {
                 if (result.isConfirmed) {
-                    axios.delete(`http://localhost:3001/vacations/${vacationId}`);
+                    axios.delete(`http://traveleasy-proj.herokuapp.com/vacations/${vacationId}`);
                     dispatch({ type: ActionType.RemoveVacation, payload: { vacationId } });
                     console.log("vacation removed")
                     Swal.fire(

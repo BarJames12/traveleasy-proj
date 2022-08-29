@@ -1,6 +1,6 @@
 import * as ErrorType from "../errors/error-type.js";
 import * as ServerError from "../errors/server-error.js";
-import * as connection from "./connection-wrapper.js";
+import connection from "./connection-wrapper.js";
 
 async function isUserExistByUserName(registrationData) {
   let sql = `SELECT * FROM Users WHERE user_name=? `;
@@ -39,6 +39,7 @@ async function login(username, password) {
 
   // console.log(loginData);
   let parameters = [username, password];
+  console.log(parameters);
 
   let usersLoginResult;
 
