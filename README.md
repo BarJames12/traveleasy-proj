@@ -5,9 +5,11 @@
 <b> https://traveleasy-app.netlify.app/ </b>
 </br>
 <p ><b>About Traveleasy</b><br ></p>
-<p ><b>React ,NodeJS , MySQl</b><br > Travel app that showing you deals for vacations all over the world. User can register, sign in and see what is thier next vacation. </p>
-</br>
+<p ><b>React ,NodeJS , MySQl</b><br > Travel app that showing you deals for vacations all over the world. User can register, sign in and see what is thier next vacation. </br>
 In addition admin dashboard, where the administrator can take control of the entire application.
+</p>
+
+
 
 # Getting Started with Create React App
 
