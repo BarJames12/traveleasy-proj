@@ -52,7 +52,7 @@ function Register() {
         }).then(
             (response) => {
                 console.log(response)
-                history.push(`/login`);
+                history.push(`/`);
                 toast.success(`Register Succesful`)
             }
         ).catch((e) => {

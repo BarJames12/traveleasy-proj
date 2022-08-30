@@ -15,7 +15,7 @@ VALUES (?,?,?,?,?,?);`;
 
   let userType = "USER";
 
-  parameters = [
+  let parameters = [
     registrationData.firstName,
     registrationData.lastName,
     registrationData.username,
